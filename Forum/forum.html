@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forum Senac</title>
+    <link rel="stylesheet" type="text/css" href="forum.css">
+    <script src="forum.js"></script>
+</head>
+
+<body>
+    <body>
+        <header>
+            <div class="opcoes-header">
+                <div class="navigation">
+                    <a href="../Informacoes/informacoes.html"> Informações</a>
+                    <a href="../Noticias/noticia.html"> Notícias</a>
+                    <a href="../ChatBot/ChatBot.html"> ChatBot</a>
+                </div>
+            </div>
+            <img src="nano.png" alt="Logo" class='logo'>
+        </header>
+        <div class="barra-pesquisa">
+            <input type="text" id="pesquisar-input" placeholder="Pesquisar...">
+        </div>
+        <main class="forum-container">
+            <div id="container-publicacoes"></div>
+            <form id="formulario-publicacao">
+                <div class="info-usuario">
+                    <div class="foto-usuario">
+                        <img id="foto-usuario-img" src="arthur.jpg" alt="Foto de usuário">
+                    </div>
+                    <input type="text" id="nome-usuario" placeholder="Nome de usuário" required>
+                    <span id="tipo-usuario"></span> <!-- Adicionamos um span para o tipo do usuário -->
+                </div>
+                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+                <select id="selecao-publicacao">
+                    <option value="Aluno">Aluno</option>
+                    <option value="Professor">Professor</option>
+                </select>
+                <input type="submit" value="Publicar">
+            </form>
+        </main>
+        <footer>
+        </footer>
+        <script src="forum.js"></script>
+    </body>
+
+</html>
